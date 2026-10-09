@@ -1,0 +1,45 @@
+name: Release macOS app
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Test finger counting
+        run: |
+          xcrun swiftc \
+            -parse-as-library \
+            -module-cache-path "$RUNNER_TEMP/finger-count-test-cache" \
+            Sources/FingerCounter.swift Tests/FingerCounterTests.swift \
+            -o "$RUNNER_TEMP/finger-counter-tests"
+          "$RUNNER_TEMP/finger-counter-tests"
+
+      - name: Build universal app
+        run: ./build.sh
+
+      - name: Verify and package app
+        run: |
+          codesign --verify --deep --strict --verbose=2 build/FingerCount.app
+          xcrun lipo build/FingerCount.app/Contents/MacOS/FingerCount -verify_arch arm64 x86_64
+          ditto -c -k --sequesterRsrc --keepParent \
+            build/FingerCount.app "$RUNNER_TEMP/FingerCount-macOS-universal.zip"
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "$RUNNER_TEMP/FingerCount-macOS-universal.zip" \
+            --verify-tag \
+            --title "FingerCount $GITHUB_REF_NAME" \
+            --notes "macOS 13+ universal build for Apple Silicon and Intel. Ad hoc signed; not notarized by Apple."
