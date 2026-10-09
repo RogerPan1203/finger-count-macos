@@ -1,0 +1,23 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Test finger counting
+        run: |
+          xcrun swiftc \
+            -parse-as-library \
+            -module-cache-path "$RUNNER_TEMP/finger-count-test-cache" \
+            Sources/FingerCounter.swift Tests/FingerCounterTests.swift \
+            -o "$RUNNER_TEMP/finger-counter-tests"
+          "$RUNNER_TEMP/finger-counter-tests"
+      - name: Build universal app
+        run: ./build.sh
+      - name: Verify app signature
+        run: codesign --verify --deep --strict --verbose=2 build/FingerCount.app
