@@ -24,6 +24,10 @@
   <a href="#中文快速上手">中文快速上手</a>
 </p>
 
+![Illustrative preview of live finger counting](docs/preview.svg)
+
+<p align="center"><sub>Illustrative preview. No camera footage is used in this image.</sub></p>
+
 ## What you get
 
 | Feature | What it does |

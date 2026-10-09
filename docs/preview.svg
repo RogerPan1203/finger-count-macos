@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">FingerCount interface preview</title>
+  <desc id="desc">Illustration of a live hand outline beside a large finger count of five.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9f3"/>
+      <stop offset="1" stop-color="#e8efe0"/>
+    </linearGradient>
+    <linearGradient id="camera" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102820"/>
+      <stop offset="1" stop-color="#061712"/>
+    </linearGradient>
+    <linearGradient id="hand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8f7c6" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#a8f7c6" stop-opacity=".10"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="20" stdDeviation="27" flood-color="#153529" flood-opacity=".13"/>
+    </filter>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#79b496" opacity=".13"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="760" fill="url(#page)"/>
+  <rect width="1280" height="760" fill="url(#dots)"/>
+
+  <g transform="translate(74 60)">
+    <g fill="#193b2e">
+      <rect x="0" y="12" width="8" height="26" rx="4" transform="rotate(-15 4 38)"/>
+      <rect x="13" y="7" width="8" height="31" rx="4"/>
+      <rect x="26" y="0" width="8" height="38" rx="4"/>
+      <rect x="39" y="6" width="8" height="32" rx="4"/>
+    </g>
+    <text x="67" y="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="25" font-weight="800" letter-spacing="-.8" fill="#193b2e">FingerCount</text>
+    <text x="1130" y="29" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="700" letter-spacing="2.4" fill="#4f705e">ON YOUR MAC · IN REAL TIME</text>
+  </g>
+
+  <text x="75" y="170" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="56" font-weight="800" letter-spacing="-2.7" fill="#173629">Hold up your fingers.</text>
+  <text x="77" y="205" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" fill="#5d7563">See the count appear. Your camera frames stay on this Mac.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="246" width="1132" height="445" rx="28" fill="#fff"/>
+  </g>
+
+  <g>
+    <rect x="94" y="266" width="760" height="405" rx="20" fill="url(#camera)"/>
+    <path d="M114 338H834M114 600H834" stroke="#619784" stroke-opacity=".11"/>
+    <path d="M200 286V650M383 286V650M566 286V650M749 286V650" stroke="#619784" stroke-opacity=".08"/>
+    <text x="128" y="313" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#c5e9d2">01 / LIVE CAMERA</text>
+    <circle cx="797" cy="303" r="5" fill="#b9ed73"/>
+    <text x="785" y="307" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="11" font-weight="700" fill="#b9ed73">LIVE</text>
+
+    <g stroke="#acdebf" stroke-width="2" opacity=".6" fill="none" stroke-linecap="round">
+      <path d="M123 365v-31h31M825 365v-31h-31M123 572v31h31M825 572v31h-31"/>
+    </g>
+
+    <path d="M402 599 C368 571 348 539 342 505 C339 484 350 468 367 469 C383 470 389 493 399 501 L398 368 C398 352 408 341 420 341 C433 341 440 352 440 369 L442 482 L442 328 C442 311 452 301 465 301 C479 301 486 312 486 329 L486 481 L488 344 C488 327 499 318 512 319 C525 320 531 332 531 348 L529 486 L532 380 C532 365 542 356 555 357 C567 358 574 368 573 383 L571 504 C578 493 587 477 601 474 C618 471 628 483 626 497 C623 520 602 563 574 599 Z" fill="url(#hand)" stroke="#b6f2c7" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <g fill="none" stroke="#b8f1c7" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+      <path d="M465 320 L465 371 L465 419 L466 470 L476 519"/>
+      <path d="M419 359 L420 398 L420 445 L428 488 L476 519"/>
+      <path d="M511 335 L510 378 L509 428 L504 479 L476 519"/>
+      <path d="M553 372 L551 410 L549 449 L542 491 L476 519"/>
+      <path d="M608 490 L579 507 L550 523 L476 519"/>
+      <path d="M356 488 L383 513 L415 533 L476 519"/>
+    </g>
+    <g fill="#d8ff92" stroke="#123c29" stroke-width="2">
+      <circle cx="465" cy="320" r="6"/><circle cx="419" cy="359" r="6"/><circle cx="511" cy="335" r="6"/><circle cx="553" cy="372" r="6"/><circle cx="608" cy="490" r="6"/>
+      <circle cx="465" cy="371" r="4"/><circle cx="420" cy="398" r="4"/><circle cx="510" cy="378" r="4"/><circle cx="551" cy="410" r="4"/><circle cx="579" cy="507" r="4"/>
+      <circle cx="476" cy="519" r="5"/>
+    </g>
+
+    <rect x="128" y="622" width="139" height="31" rx="15.5" fill="#dfff9b"/>
+    <text x="197" y="642" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="11" font-weight="800" fill="#173b28">HAND DETECTED</text>
+    <text x="816" y="642" text-anchor="end" font-family="SFMono-Regular,Menlo,monospace" font-size="11" fill="#8bb69c">24 FPS · LOCAL</text>
+  </g>
+
+  <g>
+    <text x="888" y="313" font-family="SFMono-Regular,Menlo,monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#738776">02 / LIVE COUNT</text>
+    <text x="887" y="358" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="700" fill="#244a33">Fingers up</text>
+    <text x="883" y="526" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="175" font-weight="800" letter-spacing="-11" fill="#173c2a">5</text>
+    <rect x="1068" y="444" width="93" height="29" rx="14.5" fill="#e5f7c2"/>
+    <text x="1114" y="463" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="11" font-weight="800" fill="#2c6034">ONE HAND</text>
+    <path d="M887 552H1173" stroke="#dce8da" stroke-width="1.5"/>
+    <text x="887" y="585" font-family="SFMono-Regular,Menlo,monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#68836e">HAND 01</text>
+    <text x="1171" y="591" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="800" fill="#173c2a">5 / 5</text>
+    <g fill="#a6d971">
+      <rect x="887" y="606" width="52" height="9" rx="4.5"/><rect x="945" y="606" width="52" height="9" rx="4.5"/><rect x="1003" y="606" width="52" height="9" rx="4.5"/><rect x="1061" y="606" width="52" height="9" rx="4.5"/><rect x="1119" y="606" width="52" height="9" rx="4.5"/>
+    </g>
+    <text x="887" y="649" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" fill="#78907c">Palm visible · fingers separated</text>
+  </g>
+
+  <text x="75" y="729" font-family="SFMono-Regular,Menlo,monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#66816d">APPLE VISION  /  SWIFTUI  /  OFFLINE BY DESIGN</text>
+  <text x="1205" y="729" text-anchor="end" font-family="SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a9e8d">Illustrative preview</text>
+</svg>
