@@ -42,4 +42,4 @@ jobs:
             "$RUNNER_TEMP/FingerCount-macOS-universal.zip" \
             --verify-tag \
             --title "FingerCount $GITHUB_REF_NAME" \
-            --notes "macOS 13+ universal build for Apple Silicon and Intel. Ad hoc signed; not notarized by Apple."
+            --notes "macOS 13+ universal build for Apple Silicon and Intel. Source and assets are licensed under MIT. Ad hoc signed; not notarized by Apple."

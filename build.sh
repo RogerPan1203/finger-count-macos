@@ -17,6 +17,7 @@ fi
 SDK_PATH="$(DEVELOPER_DIR="$XCODE_DEV_DIR" xcrun --sdk macosx --show-sdk-path)"
 mkdir -p "$APP_DIR/Contents/MacOS" "$APP_DIR/Contents/Resources"
 cp "$ROOT_DIR/Info.plist" "$APP_DIR/Contents/Info.plist"
+cp "$ROOT_DIR/LICENSE" "$APP_DIR/Contents/Resources/LICENSE.txt"
 
 for ARCH in arm64 x86_64; do
   DEVELOPER_DIR="$XCODE_DEV_DIR" xcrun swiftc \

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  macOS 13+ · Apple Silicon & Intel · SwiftUI + Apple Vision · No third-party dependencies
+  macOS 13+ · Apple Silicon & Intel · SwiftUI + Apple Vision · MIT License
 </p>
 
 <p align="center">
@@ -108,6 +108,10 @@ DEVELOPER_DIR="${DEVELOPER_DIR:-$(xcode-select -p)}" xcrun swiftc \
 
 Issues and pull requests are welcome, especially reproducible gesture examples and suggestions for improving occlusion handling or adding interface translations. If the project is useful to you, a GitHub star helps others find it.
 
+## License
+
+FingerCount is available under the [MIT License](LICENSE). Copyright © 2026 RogerPan1203.
+
 ## 中文快速上手
 
-需要 **macOS 13 及以上**。可从[最新版本](https://github.com/RogerPan1203/finger-count-macos/releases/latest)下载通用版应用。该版本尚未经过 Apple 公证，macOS 可能在首次打开时提示警告；也可以用完整 Xcode 在仓库目录运行 `./build.sh`，然后打开 `build/FingerCount.app`。界面默认跟随系统语言，也可在顶部切换「跟随系统 / English / 中文」。点击「开启摄像头」并允许权限；「镜像画面」切换预览方向，「停止」关闭摄像头。握拳显示 **0**，未检测到手显示 **—**。画面只在本机处理，不会保存或上传。
+需要 **macOS 13 及以上**。可从[最新版本](https://github.com/RogerPan1203/finger-count-macos/releases/latest)下载通用版应用。该版本尚未经过 Apple 公证，macOS 可能在首次打开时提示警告；也可以用完整 Xcode 在仓库目录运行 `./build.sh`，然后打开 `build/FingerCount.app`。界面默认跟随系统语言，也可在顶部切换「跟随系统 / English / 中文」。点击「开启摄像头」并允许权限；「镜像画面」切换预览方向，「停止」关闭摄像头。握拳显示 **0**，未检测到手显示 **—**。画面只在本机处理，不会保存或上传。代码以 [MIT 许可证](LICENSE)开放。
