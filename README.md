@@ -14,6 +14,11 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/RogerPan1203/finger-count-macos/actions/workflows/ci.yml"><img src="https://github.com/RogerPan1203/finger-count-macos/actions/workflows/ci.yml/badge.svg" alt="Build and test"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/RogerPan1203/finger-count-macos/releases/latest">Download for Mac</a> ·
   <a href="#quick-start">Get started</a> ·
   <a href="#how-it-works">How it works</a> ·
   <a href="#中文快速上手">中文快速上手</a>
@@ -32,6 +37,10 @@
 No hand in view shows **—**; a detected closed fist shows **0**. The app processes camera frames on your Mac and does not record or upload them. The interface follows your macOS language by default and can be changed in the app.
 
 ## Quick start
+
+### Download the app
+
+Grab the [latest universal Mac build](https://github.com/RogerPan1203/finger-count-macos/releases/latest), unzip it, and open `FingerCount.app`. It runs on Apple Silicon and Intel Macs with macOS 13 or newer. The release is ad hoc signed but is **not Apple notarized**, so macOS may warn when opening a downloaded copy. If it blocks the app, you can build from source below.
 
 ### Build from source
 
@@ -97,4 +106,4 @@ Issues and pull requests are welcome, especially reproducible gesture examples a
 
 ## 中文快速上手
 
-需要 **macOS 13 及以上**及完整 Xcode。在仓库目录运行 `./build.sh`，然后打开 `build/FingerCount.app`。界面默认跟随系统语言，也可在顶部切换「跟随系统 / English / 中文」。点击「开启摄像头」并允许权限；「镜像画面」切换预览方向，「停止」关闭摄像头。握拳显示 **0**，未检测到手显示 **—**。画面只在本机处理，不会保存或上传。
+需要 **macOS 13 及以上**。可从[最新版本](https://github.com/RogerPan1203/finger-count-macos/releases/latest)下载通用版应用。该版本尚未经过 Apple 公证，macOS 可能在首次打开时提示警告；也可以用完整 Xcode 在仓库目录运行 `./build.sh`，然后打开 `build/FingerCount.app`。界面默认跟随系统语言，也可在顶部切换「跟随系统 / English / 中文」。点击「开启摄像头」并允许权限；「镜像画面」切换预览方向，「停止」关闭摄像头。握拳显示 **0**，未检测到手显示 **—**。画面只在本机处理，不会保存或上传。
